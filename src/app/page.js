@@ -110,11 +110,7 @@ export default function Home() {
                 value={password}
               />
               {!loadingLogin && <Button onClick={login}>Login</Button>}
-              {loadingLogin && (
-                <Button disabled onClick={login}>
-                  Login...
-                </Button>
-              )}
+              {loadingLogin && <Button disabled>Login...</Button>}
             </Group>
           )}
           {authenUsername && (
